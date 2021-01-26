@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import PStoreApps from './components/PStoreApp';
+import PStoreApps,{PStoreApps1 as SecondPSApp} from './components/PStoreApp';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-   <PStoreApps/>
+    <PStoreApps name=  "Prathima" gender = "Female"/>
+   <SecondPSApp work = "Android Developer" exp = {5 + 6}/>
   </React.StrictMode>,
   document.getElementById('root')
 );
